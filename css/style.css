@@ -1,0 +1,273 @@
+/* Reset */
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header {
+    text-align: center;
+    color: #FFF;
+    min-height: 100vh;
+    display: flex;              /* deixar os elementos da tela flexiveis */
+    flex-flow: column;
+    background-image: url(../img/doce.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+header div {
+    margin: auto;
+    min-width: 250px;
+    position: relative;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+    margin: 20px auto;
+}
+
+header a {
+    display: block;                         /* a organizacao do elemento e feita em bloco */
+    background-color: rgba(0,0,0,0.5);     /* rgba(red,green,blue,opaco) */
+    color: #fff;
+    max-width: 160px;
+    margin: auto;
+    padding: 12px 0;
+    border-radius: 4px;
+    text-transform: uppercase;              /* Letra toda em maiuscula */
+    transition: all .2s ease;               /* O efeito da transicao de cor */
+    font-weight: bold;                      /* Letra meio em negrito */
+    font-size: 13px;
+}
+
+header a:hover {                    /* Efeito de passar o mouse em cima */
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Destaque */
+
+.destaque {
+    text-align: center;
+}
+
+.destaque h2 {
+    margin: 30px auto;
+}
+
+.destaque li {
+    margin: 50px auto;
+}
+
+.destaque li:nth-of-type(1) div {
+    background-color: #999;
+}
+
+.destaque li:nth-of-type(2) div {
+    background-color: #999;
+}
+
+.destaque li:nth-of-type(3) div {
+    background-color: #999;
+}
+
+.destaque div {
+    margin: auto;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .destaque ul {
+        display: flex;
+    }
+}
+
+/* detail */
+
+.detail {
+    padding: 0 5%;
+}
+
+.detail h2 {
+    text-align: center;
+    color: #888;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .detail {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .detail h2 {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .detail-right h2 {
+        text-align: right;
+    }
+    
+    .detail .img-container {
+        width: 45%;
+        margin: auto;
+    }
+    
+    .detail p {
+        width: 45%;
+        margin: auto;
+        margin-left: 0;
+    }
+    
+    .detail-right .img-container {
+        order: 0;
+    }
+    
+    .detail-right p {
+        order: 1;
+    }
+}
+
+/* faixa */
+
+.faixa {
+    background-color: #999;
+    text-align: center;
+    padding: 5vh 5vw;
+    margin: 5vh 0;
+    color: #fff;
+}
+
+/* contact */
+
+.contact {
+    background-color: #999;
+    min-height: 90vh;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.contact h2,
+.contact p,
+.contact ul {
+    margin: auto;
+}
+
+.contact a {
+    color: #fff;
+    background-color: rgba(123,231,50,0.5);
+    padding: 16px;
+    display: block;
+    max-width: 240px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    
+    .contact {
+        min-height: 30vh;
+        flex-flow: row wrap;
+    }
+    
+    .contact h2 {
+        width: 100%;
+    }
+    
+    .contact p {
+        width: 40%;
+        max-width: 300px;
+    }
+    
+    .contact ul {
+        width: 50%;
+    }
+}
+
+/* footer */
+
+footer {
+    min-height: 10vh;
+    background-color: #fff;
+    display: flex;
+}
+
+footer a {
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #C4C4C4;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    width: 100%;
+}
+
+footer li {
+    margin: auto;
+    background-color: #999;
+    padding: 3px 3px;
+    border-radius: 50%;
+}
