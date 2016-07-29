@@ -29,6 +29,20 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* nav */
+
+nav {
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,50,0.8);
+    z-index: 10;    
+}
+
+nav 
+
 /* header */
 header {
     text-align: center;
